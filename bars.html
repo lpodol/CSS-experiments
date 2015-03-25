@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset="utf-8">
+    <style>
+    .loading{
+      height: 200px;
+      width: 200px;
+      margin: 200px auto;
+    }
+
+    .loading.bars div {
+     margin: 1px;
+     height:50px;
+     width:15px;
+     display:inline-block;
+     /*border: 1px solid black;*/
+     -webkit-animation: bars_loader 1.3s linear infinite;
+     -moz-animation: bars_loader 1.3s linear infinite;
+     animation: bars_loader 1.3s linear infinite;
+     -webkit-transform: scale(1);
+     -moz-transform: scale(1);
+     transform:scale(1);
+    }
+
+    .bars div:nth-child(1) {
+    background-color: #2874bc;
+    -webkit-animation-delay: 0.39s;
+    -moz-animation-delay: 0.39s;
+    animation-delay:0.39s;
+    }
+
+    .bars div:nth-child(2){
+    background-color: #2880bc;
+    -webkit-animation-delay:0.52s;
+    -moz-animation-delay:0.52s;
+    animation-delay:0.52s;
+    }
+
+    .bars div:nth-child(3){
+    background-color: #288dbc;
+    -webkit-animation-delay:0.65s;
+    -moz-animation-saly:0.65s;
+    animation-delay:0.65s;
+    }
+
+    .bars div:nth-child(4){
+    background-color: #2899bc;
+    -webkit-animation-delay:0.78s;
+    -moz-animation-saly:0.78s;
+    animation-delay:0.78s;
+    }
+
+    .bars div:nth-child(5){
+    background-color: #28a5bc;
+    -webkit-animation-delay:0.91s;
+    -moz-animation-saly:0.91s;
+    animation-delay:0.91s;
+    }
+
+    .bars div:nth-child(6){
+    background-color: #28b2bc;
+    -webkit-animation-delay:1.03s;
+    -moz-animation-saly:1.03s;
+    animation-delay:1.03s;
+    }
+
+   .bars div:nth-child(7){
+     background-color: #28bcba;
+    -webkit-animation-delay:1.16s;
+    -moz-animation-saly:1.16s;
+    animation-delay:1.16s;
+    }
+
+   @-webkit-keyframes bars_loader{
+      0%{
+           -webkit-transform: scale(1.2);
+           opacity:1
+      }
+      100%{
+           -webkit-transform: scale(0.7);
+           opacity:0.1
+      }
+   }
+   @-moz-keyframes bars_loader{
+      0%{
+           -moz-transform:scale(1.2);
+           opacity:1
+      }
+      100%{
+           -moz-transform:scale(0.7);
+           opacity:0.1
+      }
+   }
+   @keyframes bars_loader{
+      0%{
+          transform:scale(1.2);
+          opacity:1
+      }
+      100%{
+          transform:scale(0.7);
+          opacity:0.1
+      }
+   }
+
+    </style>
+  </head>
+  <body>
+    <div class="loading bars">
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+   </div>
+  </body>
+</html>
